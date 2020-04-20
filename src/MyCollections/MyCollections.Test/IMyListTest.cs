@@ -109,7 +109,6 @@ namespace MyCollections.Test
         protected abstract IMyList<T> CreateSut();
         protected abstract IEnumerable<T> GetElements();
         protected abstract T GetElement();
-
         protected abstract void AssertAreEqual(T val1, T val2);
     }
 }

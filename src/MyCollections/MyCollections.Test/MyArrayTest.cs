@@ -8,10 +8,13 @@ namespace MyCollections.Test
         protected override void AssertAreEqual(int val1, int val2)
             => Assert.Equal(val1, val2);
 
-        protected override IMyList<int> CreateSut() => new MyArray<int>();
+        protected override IMyList<int> CreateSut() 
+            => new MyArray<int>();
 
-        protected override int GetElement() => 42;
+        protected override int GetElement() 
+            => 42;
 
-        protected override IEnumerable<int> GetElements() => new int[] { 1, 2, 3, 4 };
+        protected override IEnumerable<int> GetElements() 
+            => new int[] { 1, 2, 3, 4 };
     }
 }
